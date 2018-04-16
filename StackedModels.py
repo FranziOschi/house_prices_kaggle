@@ -1,9 +1,9 @@
 __author__ = 'franzi'
 
 import numpy as np
-from sklearn.base import BaseEstimator, TransformerMixin, RegressorMixin, clone
+from sklearn.base import clone
 
-class StackingModels(BaseEstimator, RegressorMixin, TransformerMixin):
+class StackingModels():
 
     def __init__(self, base_models, meta_model):
 
